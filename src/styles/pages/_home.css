@@ -68,6 +68,7 @@
 }
 
 .social-links a img {
+  border-radius: 50%;
   box-shadow: var(--primary-box-shadow);
 }
 .social-links :hover {

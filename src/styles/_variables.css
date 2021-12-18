@@ -4,6 +4,6 @@
   --secondary-color: #5f2eea;
   --ternary-color: #e4daff;
   --success-color: #00ba88;
-  --primary-box-shadow: 0px 4px 7px #e4daff;
-  --secondary-box-shadow: 0px 4px 7px #00ba88;
+  --primary-box-shadow: 0px 4px 7px var(--ternary-color);
+  --secondary-box-shadow: 0px 4px 7px var(--success-color);
 }
