@@ -1,3 +1,76 @@
-.colorTest {
-    color: var(--primary-blue);
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.header ul li {
+  display: inline;
+  padding: 2rem;
+}
+
+.primary-link {
+  text-decoration-style: none;
+  text-decoration: none;
+  color: var(--success-color);
+}
+
+.secondary-link :hover {
+  color: var(--primary-color);
+}
+
+.primary-link :hover {
+  text-decoration-style: none;
+  text-decoration: none;
+  color: var(--success-color);
+}
+
+.header ul li a {
+  color: var(--primary-color);
+  text-decoration-style: none;
+  text-decoration: none;
+}
+.home-page-content {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+.profile-image {
+  width: 600px;
+  height: 600px;
+}
+.home-page-content .intro {
+  padding-top: 8rem;
+}
+
+.home-page-content .intro h1 {
+  font-size: 2rem;
+}
+.home-page-content .intro h2 {
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+.home-page-content .intro h3 {
+  font-size: 1.75rem;
+  padding-top: 1rem;
+}
+.social-links {
+  padding-top: 4rem;
+}
+.social-links a {
+  padding-right: 1.5rem;
+}
+
+.social-links a img {
+  box-shadow: var(--primary-box-shadow);
+}
+.social-links :hover {
+  transition: transform .5s;
+  transform: scale(1.3);
 }
