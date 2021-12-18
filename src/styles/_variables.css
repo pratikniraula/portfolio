@@ -1,0 +1,9 @@
+:root {
+  --background-color: #e5e5e5;
+  --primary-color: #2a00a2;
+  --secondary-color: #5f2eea;
+  --ternary-color: #e4daff;
+  --success-color: #00ba88;
+  --primary-box-shadow: 0px 4px 7px #e4daff;
+  --secondary-box-shadow: 0px 4px 7px #00ba88;
+}
