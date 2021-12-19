@@ -1,3 +1,15 @@
+.skill-card {
+  display: flex;
+  flex-direction: column-reverse !important;
+  height: 22rem !important;
+}
+.skill-card .primary-link {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
 .about-page-content .about-title {
   padding: 10rem 0rem 0rem 20rem;
   color: var(--success-color);
@@ -13,14 +25,14 @@
   padding-top: 1rem;
 }
 
-.educations .heading {
+.container .heading {
   text-align: center;
   padding-top: 4rem;
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-.education-card {
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,17 +44,17 @@
   background-color: var(--background-color);
   box-shadow: var(--primary-box-shadow);
 }
-.education-card .title h1 {
+.card .title h1 {
   text-align: center;
   font-size: 1.25rem;
 }
-.education-card .title h2 {
+.card .title h2 {
   padding-top: 1rem;
   text-align: center;
   font-size: 1.25rem;
   color: var(--text-grey);
 }
-.education-card .image {
+.card .image {
   background-color: var(--text-grey);
   border-radius: 16px;
   height: 16rem;
@@ -50,23 +62,23 @@
   margin-top: 1rem;
 }
 
-.education-card .image img {
+.card .image img {
   border-radius: 16px;
   height: 16rem;
   width: 16rem;
 }
 
-.education-card .social-links {
+.card .social-links {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   padding: 1rem 0 0 0;
 }
-.education-card .social-links :hover {
+.card .social-links :hover {
   transform: scale(1.1);
 }
 
-.list-education {
+.list {
   justify-content: center;
   display: flex;
   padding: 4rem 0;
@@ -86,7 +98,7 @@
     text-align: center;
   }
 
-  .list-education {
+  .list {
     display: grid;
   }
 }
