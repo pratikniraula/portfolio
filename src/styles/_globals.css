@@ -10,7 +10,9 @@ body,
 body {
   background-color: var(--background-color);
 }
-
+img {
+  object-fit: cover;
+}
 .disable-select {
   -webkit-user-select: none;
   -moz-user-select: none;
