@@ -13,3 +13,30 @@
   text-decoration: none;
   color: var(--success-color);
 }
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 4rem;
+}
+
+.social-links a img {
+  border-radius: 50%;
+  transition: all 0.25s ease-in-out;
+  box-shadow: var(--primary-box-shadow);
+}
+.social-links :hover {
+  transform: scale(1.2);
+}
+
+.primary-solid-background {
+  height: 30rem;
+  width: 100%;
+  background-color: var(--primary-white);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .primary-solid-background {
+    height: 20rem;
+  }
+}

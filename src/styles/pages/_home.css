@@ -44,21 +44,6 @@
   font-size: 1.75rem;
   padding-top: 1rem;
 }
-.social-links {
-  padding-top: 4rem;
-}
-.social-links a {
-  padding-right: 1.5rem;
-}
-
-.social-links a img {
-  border-radius: 50%;
-  box-shadow: var(--primary-box-shadow);
-}
-.social-links :hover {
-  transition: transform 0.5s;
-  transform: scale(1.3);
-}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
