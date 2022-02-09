@@ -11,54 +11,134 @@
     <div class="header">
       <ul>
         <li class="primary-link">
-          <a class="success-color" href="./index.html">HOME</a>
+          <a href="./index.html">HOME</a>
         </li>
-        <li class="primary-link"><a href="./src/pages/about.html">ABOUT</a></li>
+        <li class="primary-link"><a href="#about">ABOUT</a></li>
         <li class="primary-link">
-          <a href="./src/pages/projects.html">PROJECTS</a>
+          <a href="#project">PROJECTS</a>
         </li>
         <li class="primary-link">
-          <a href="./src/pages/contact.html">CONTACT</a>
+          <a href="#contact">CONTACT</a>
         </li>
       </ul>
     </div>
-    <div class="home-page-content">
-      <div class="intro">
-        <h1>Hey There !</h1>
-        <h2>I am Prateek</h2>
-        <h3 class="secondary-link">
-          Student at
-          <a class="primary-link" href="https://zealand.com/">ZEALAND, KØGE</a>
-        </h3>
-        <div class="social-links">
-          <a href="mailto:pratikniraula9847@gmail.com"
-            ><img src="./public/icons/mail.svg" alt="mail icon"
-          /></a>
-          <a href="tel:+45-71359539"
-            ><img src="./public/icons/phone.svg" alt="phone icon"
-          /></a>
-          <a href="https://www.linkedin.com/in/prateek-niraula-769103229"
-            ><img src="./public/icons/linkedin.svg" alt="linkedin icon"
-          /></a>
-          <a href="https://github.com/pratikniraula"
-            ><img src="./public/icons/github.svg" alt="github icon"
-          /></a>
-          <a href="https://www.facebook.com/pratik.niraula"
-            ><img src="./public/icons/facebook.svg" alt="facebook icon"
-          /></a>
-          <a
-            href="https://www.google.dk/maps/place/Skagensgade+2E,+2630+Taastrup/@55.650615,12.2651973,17z/data=!3m1!4b1!4m5!3m4!1s0x46525909790eb8ff:0x2bfe2b1f288144eb!8m2!3d55.650615!4d12.267386"
-            ><img src="./public/icons/location.svg" alt="location icon"
-          /></a>
+    <div class="home-page">
+      <div class="home-page-intro">
+        <div class="home-page-img-bg">
+          <img src="./public/images/me.jpeg" alt="prateek niraula" />
+        </div>
+        <div class="home-page-content">
+          <h2>Hello & Welcome to my portfolio</h2>
+          <h1>PRATEEK NIRAULA</h1>
+          <div class="home-page-intro-buttons">
+            <label for="follow-me"></label>
+            <input
+              class="follow-me"
+              id="follow-me"
+              placeholder="your@mail.com"
+              type="email"
+            />
+            <a class="button">
+              <div class="primary-button">STAY CONNECTED</div>
+            </a>
+          </div>
         </div>
       </div>
-
-      <div>
-        <img
-          class="profile-image"
-          src="./public/images/prateek_background.svg"
-          alt="prateek niraula image"
-        />
+      <div id="project" class="home-page-projects">
+        <div class="project-title">Previous projects...</div>
+        <div class="projects-container">
+          <a
+            href="https://github.com/pratikniraula/dance_theme"
+            class="project-card"
+          >
+            <img src="./public/icons/github.svg" alt="" />
+            <h1>Dance Theme</h1>
+            <p>
+              During this theme I participated on two different dance project as
+              it was swing dance and ballet as i was given a task to make
+              contact page for this theme.
+            </p>
+          </a>
+          <a
+            href="https://github.com/pratikniraula/entrepreneur_theme"
+            class="project-card"
+          >
+            <img src="./public/icons/github.svg" alt="" />
+            <h1>Entrepreneur Theme</h1>
+            <p>
+              As this theme was designed for the student to uplift their skills
+              I participated on it and made About us page and some personas.
+            </p>
+          </a>
+        </div>
+      </div>
+      <div id="about" class="about-page-header">About me...</div>
+      <div class="home-page-about">
+        <div class="about-page-detail">
+          <div class="description-card">
+            <p>
+              I am Prateek Niraula, Currently studing Multimedia and
+              communnication at ZEALAND, KØGE.
+            </p>
+          </div>
+          <div class="description-card">
+            <p>I am a Nepalese citizen currently living in Denmark.</p>
+          </div>
+          <div class="description-card">
+            <p>
+              I enjoy watching and playing football, beside that I am intrested
+              in music.
+            </p>
+          </div>
+          <div class="description-card">
+            <p>I love to invest my time in designing and developing website.</p>
+          </div>
+        </div>
+        <div class="about-page">
+          <img src="/public/images/me2.png" alt="prateek niraula" />
+        </div>
+      </div>
+      <div class="gallery home-page-skills">
+        <div class="gallery-title">Skills...</div>
+        <div class="gallery-container">
+          <div class="gallery-img">
+            <img src="./public/images/html.png" alt="html" />
+          </div>
+          <div class="gallery-img">
+            <img src="./public/images/css.png" alt="css" />
+          </div>
+          <div class="gallery-img">
+            <img src="./public/images/git.png" alt="git" />
+          </div>
+          <div class="gallery-img">
+            <img src="./public/images/figma.png" alt="figma" />
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="home-page-footer-title">Contact Me...</div>
+      <div class="home-page-contact">
+        <a href="mailto:pratikniraula9847@gmail.com"
+          ><img src="./public/icons/mail.svg" alt="mail icon"
+        /></a>
+        <a href="tel:+45-71359539"
+          ><img src="./public/icons/phone.svg" alt="phone icon"
+        /></a>
+        <a href="https://www.linkedin.com/in/prateek-niraula-769103229"
+          ><img src="./public/icons/linkedin.svg" alt="linkedin icon"
+        /></a>
+        <a href="https://github.com/pratikniraula"
+          ><img src="./public/icons/github.svg" alt="github icon"
+        /></a>
+        <a href="https://www.facebook.com/pratik.niraula"
+          ><img src="./public/icons/facebook.svg" alt="facebook icon"
+        /></a>
+        <a
+          href="https://www.google.dk/maps/place/Skagensgade+2E,+2630+Taastrup/@55.650615,12.2651973,17z/data=!3m1!4b1!4m5!3m4!1s0x46525909790eb8ff:0x2bfe2b1f288144eb!8m2!3d55.650615!4d12.267386"
+          ><img src="./public/icons/location.svg" alt="location icon"
+        /></a>
+      </div>
+      <div class="home-page-footer">
+        <p></p>
       </div>
     </div>
   </body>

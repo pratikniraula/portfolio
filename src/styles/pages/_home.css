@@ -1,68 +1,304 @@
+.vw {
+  width: 100vw;
+}
+
+.vh {
+  height: 100vh;
+}
+
+.primary-link,
+.primary-link a {
+  text-decoration-style: none;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.button {
+  height: max-content;
+  width: max-content;
+}
+
+.primary-button {
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s ease-in-out;
+  border: 2px solid var(--black);
+  background-color: var(--white);
+  cursor: pointer;
+  height: fit-content;
+  min-width: max-content;
+  max-width: max-content;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.primary-button:hover {
+  color: var(--white);
+  background-color: var(--black);
+}
+
 .header {
   display: flex;
-  justify-content: center;
   align-items: center;
   text-align: center;
   height: 100px;
-  width: 100%;
+  width: 100vw;
+  background-color: var(--light-grey);
   top: 0;
   font-weight: bold;
   font-size: 1.5rem;
+  padding-left: 10rem;
 }
 
 .header ul li {
   display: inline;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .header ul li a {
-  color: var(--primary-color);
   text-decoration-style: none;
   text-decoration: none;
 }
+
+img {
+  object-fit: cover;
+}
+.home-page {
+  position: relative;
+}
+
+.home-page-intro-buttons {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.home-page-img-bg img {
+  max-width: 40rem;
+  max-height: 40rem;
+}
+
 .home-page-content {
-  padding-top: 4rem;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.home-page-content h1 {
+  font-size: 4rem;
+}
+
+.home-page-content h2 {
+  font-size: 2rem;
+}
+
+.home-page-intro {
+  gap: 2rem;
+  padding: 8rem 1rem 0 1rem;
   display: flex;
   justify-content: space-around;
 }
-.profile-image {
-  width: 600px;
-  height: 600px;
-}
-.home-page-content .intro {
-  padding-top: 8rem;
+.about-me-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.home-page-content .intro h1 {
-  font-size: 2rem;
+.home-page-projects {
+  justify-items: center;
+  display: grid;
+  gap: 4rem;
+  align-items: center;
 }
-.home-page-content .intro h2 {
-  font-size: 3rem;
-  padding-top: 2rem;
-}
-.home-page-content .intro h3 {
-  font-size: 1.75rem;
-  padding-top: 1rem;
+.projects-container {
+  display: flex;
+  gap: 2.5rem;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .header ul li {
-    display: inline;
-    padding: 1rem;
-    font-size: 1rem;
+.project-card {
+  text-decoration: none;
+  text-decoration-color: none;
+  padding: 2rem;
+  background-color: var(--light-grey);
+  border-radius: 10px;
+  text-align: center;
+  width: 450px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 1.25rem;
+  border: 2px solid var(--white);
+}
+
+.project-card h1 {
+  color: var(--black);
+}
+
+.project-card:hover {
+  border: 2px solid var(--black);
+}
+
+.project-card p {
+  color: var(--text-grey);
+}
+
+.project-title {
+  padding: 4rem 0;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.description-card {
+  border: 2px solid var(--white);
+  gap: 1rem;
+  padding: 2rem;
+  justify-items: center;
+  border-radius: 10px;
+  display: grid;
+  text-align: left;
+  align-content: center;
+  width: 350px;
+  height: fit-content;
+  background-color: var(--light-grey);
+  transition: 0.5s ease-in-out;
+}
+
+.description-card:hover {
+  border: 2px solid var(--text-grey);
+}
+.description-card p {
+  color: var(--text-grey);
+}
+
+.home-page-about {
+  display: flex;
+  padding: 10rem 1rem 0rem 1rem;
+  justify-content: space-around;
+}
+
+.about-page img {
+  height: 100%;
+  width: 50vw;
+}
+
+.about-page-detail {
+  padding: 2rem;
+  background-color: var(--black);
+  width: 50vw;
+  justify-content: center;
+  justify-items: center;
+  gap: 1rem 0rem;
+  display: grid;
+}
+.about-page-header {
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.gallery {
+  padding-top: 10rem;
+  display: grid;
+}
+
+.gallery-title {
+  padding-bottom: 3.5rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+.gallery-img img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.gallery-img img:hover {
+  transform: scale(1.02);
+}
+
+.gallery-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, auto);
+  gap: 2rem;
+}
+
+.gallery-end img {
+  padding: 4rem 0 0 0;
+  width: 100%;
+  height: 50vh;
+  object-fit: fill;
+}
+
+.home-page-contact img {
+  height: 4rem;
+  width: 4rem;
+  transition: 0.5s ease-in-out;
+}
+.home-page-contact img:hover {
+  transform: scale(1.2);
+}
+.home-page-contact {
+  background-color: var(--light-grey);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 4rem;
+}
+.home-page-skills {
+  padding-bottom: 5rem;
+}
+
+.home-page-footer-title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding: 4rem 0;
+}
+
+.follow-me {
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  width: 100%;
+  border: 2px solid var(--black);
+}
+
+@media only screen and (max-width: 1080px) {
+  .home-page-img-bg img {
+    width: 100vw;
   }
-  .profile-image {
-    width: 400px;
-    height: 400px;
+  .home-page-contact {
+    gap: 1rem;
   }
-  .home-page-content {
+  .home-page-contact img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .header {
+    padding: 0;
     display: flex;
-    flex-direction: column-reverse;
-    position: absolute;
-    padding: 1.5rem;
+    justify-content: center;
   }
-  .home-page-content .intro {
-    padding-top: 3.5rem;
+  .home-page-intro {
+    display: grid;
+  }
+
+  .gallery-container {
+    grid-template-columns: repeat(2, auto);
+  }
+  .project-card {
+    width: 100%;
+  }
+
+  .projects-container,
+  .home-page-about {
+    display: grid;
   }
 }
