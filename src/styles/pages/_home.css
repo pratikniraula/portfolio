@@ -28,7 +28,7 @@
   height: fit-content;
   min-width: max-content;
   max-width: max-content;
-  padding: 0.75rem 1.25rem;
+  padding: 0.25rem 1rem;
   font-size: 1.25rem;
   font-weight: bold;
 }
@@ -39,24 +39,39 @@
 }
 
 .header {
+  position: absolute;
+  z-index: 999;
   display: flex;
   align-items: center;
   text-align: center;
   height: 100px;
   width: 100vw;
-  background-color: var(--light-grey);
   top: 0;
   font-weight: bold;
   font-size: 1.5rem;
   padding-left: 10rem;
 }
 
+.active-nav a {
+  text-underline-offset: 5px !important;
+  text-decoration: underline !important;
+  color: var(--green) !important;
+}
+
 .header ul li {
-  display: inline;
-  padding: 1.5rem;
+  display: inline-flex;
+  padding: 0 1.5rem;
+}
+
+.header ul li a:hover {
+  text-underline-offset: 5px;
+  text-decoration: underline;
+  color: var(--green);
 }
 
 .header ul li a {
+  display: flex;
+  gap: 1rem;
   text-decoration-style: none;
   text-decoration: none;
 }
@@ -122,7 +137,7 @@ img {
   text-decoration: none;
   text-decoration-color: none;
   padding: 2rem;
-  background-color: var(--light-grey);
+  background-color: var(--light-green);
   border-radius: 10px;
   text-align: center;
   width: 450px;
@@ -130,23 +145,24 @@ img {
   justify-items: center;
   align-items: center;
   gap: 1.25rem;
-  border: 2px solid var(--white);
-}
-
-.project-card h1 {
-  color: var(--black);
-}
-
-.project-card:hover {
   border: 2px solid var(--black);
 }
 
+.project-card h1 {
+  color: var(--yellow);
+}
+
+.project-card:hover {
+  border: 2px solid var(--green);
+}
+
 .project-card p {
-  color: var(--text-grey);
+  font-weight: bold;
+  color: var(--black);
 }
 
 .project-title {
-  padding: 4rem 0;
+  padding: 8rem 0 0rem 0;
   font-size: 3.5rem;
   font-weight: bold;
 }
@@ -156,7 +172,7 @@ img {
   gap: 1rem;
   padding: 2rem;
   justify-items: center;
-  border-radius: 10px;
+  border-radius: 30px;
   display: grid;
   text-align: left;
   align-content: center;
@@ -175,7 +191,7 @@ img {
 
 .home-page-about {
   display: flex;
-  padding: 10rem 1rem 0rem 1rem;
+  padding: 4rem 0rem 0rem 0rem;
   justify-content: space-around;
 }
 
@@ -186,7 +202,7 @@ img {
 
 .about-page-detail {
   padding: 2rem;
-  background-color: var(--black);
+  background-color: #161C24;
   width: 50vw;
   justify-content: center;
   justify-items: center;
@@ -194,7 +210,7 @@ img {
   display: grid;
 }
 .about-page-header {
-  padding-top: 5rem;
+  padding-top: 10rem;
   text-align: center;
   font-size: 3.5rem;
   font-weight: bold;
@@ -238,8 +254,8 @@ img {
 }
 
 .home-page-contact img {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
   transition: 0.5s ease-in-out;
 }
 .home-page-contact img:hover {
@@ -271,6 +287,10 @@ img {
 }
 
 @media only screen and (max-width: 1080px) {
+  .header ul li {
+    padding: 0 0.5rem;
+    font-size: 1rem;
+  }
   .home-page-img-bg img {
     width: 100vw;
   }
@@ -292,9 +312,6 @@ img {
 
   .gallery-container {
     grid-template-columns: repeat(2, auto);
-  }
-  .project-card {
-    width: 100%;
   }
 
   .projects-container,

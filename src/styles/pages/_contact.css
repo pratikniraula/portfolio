@@ -1,0 +1,91 @@
+.contact-page {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  gap: 10rem;
+  padding-top: 15rem;
+}
+
+.contact-page-intro {
+  display: grid;
+  gap: 4rem 2rem;
+}
+
+.contact-page-intro-say h1 {
+  font-size: 3rem;
+}
+
+.contact-page-intro-say p {
+  font-size: 1.5rem;
+}
+
+.contact-page-contact {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-page-contact a img {
+  height: 25px;
+  width: 25px;
+}
+
+.contact-page-contact a {
+  text-align: center;
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: var(--black);
+}
+
+.contact-page-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-page-form .flex {
+  gap: 2rem;
+}
+
+.contact-page-contact a:hover {
+  color: var(--green);
+}
+
+#input {
+  padding: 0 0 1rem 0;
+  display: grid;
+  max-width: 100%;
+  min-width: 300px;
+}
+
+#input label {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#input input {
+  overflow: auto;
+  font-family: 'Poppins' sans-serif;
+  font-size: 1rem;
+  height: 2rem;
+  border: none;
+  background: transparent;
+  padding: 0rem 1rem 0rem 0rem;
+  border-bottom: 2px solid var(--black);
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.contact-page-footer {
+  padding-top: 2rem;
+  justify-content: flex-start !important;
+}

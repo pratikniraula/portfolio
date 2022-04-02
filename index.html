@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles/index.css" />
-    <title>prateek</title>
+    <title>Prateek Niraula</title>
   </head>
   <body>
     <div class="header">
       <ul>
-        <li class="primary-link">
+        <li class="primary-link active-nav">
           <a href="./index.html">HOME</a>
         </li>
-        <li class="primary-link"><a href="#about">ABOUT</a></li>
+        <li class="primary-link"><a href="./src/pages/about.html">ABOUT</a></li>
         <li class="primary-link">
-          <a href="#project">PROJECTS</a>
+          <a href="./src/pages/project.html">PROJECTS</a>
         </li>
         <li class="primary-link">
-          <a href="#contact">CONTACT</a>
+          <a href="./src/pages/contact.html">CONTACT</a>
         </li>
       </ul>
     </div>
@@ -28,70 +28,50 @@
           <img src="./public/images/me.jpeg" alt="prateek niraula" />
         </div>
         <div class="home-page-content">
-          <h2>Hello & Welcome to my portfolio</h2>
-          <h1>PRATEEK NIRAULA</h1>
-          <div class="home-page-intro-buttons">
-            <label for="follow-me"></label>
-            <input
-              class="follow-me"
-              id="follow-me"
-              placeholder="your@mail.com"
-              type="email"
-            />
-            <a class="button">
+          <h2>Welcome to my portfolio</h2>
+          <h1 class="green">PRATEEK NIRAULA</h1>
+          <form class="home-page-intro-buttons">
+            <div id="input" className="input">
+              <label for="follow_me">FOLLOW ME</label>
+              <input
+                placeholder="your@email.com"
+                name="follow_me"
+                id="follow_me"
+                type="email"
+                required
+              />
+            </div>
+            <button type="submit" class="button">
               <div class="primary-button">STAY CONNECTED</div>
-            </a>
-          </div>
+            </button>
+          </form>
         </div>
       </div>
-      <div id="project" class="home-page-projects">
-        <div class="project-title">Previous projects...</div>
-        <div class="projects-container">
-          <a
-            href="https://github.com/pratikniraula/dance_theme"
-            class="project-card"
-          >
-            <img src="./public/icons/github.svg" alt="" />
-            <h1>Dance Theme</h1>
-            <p>
-              During this theme I participated on two different dance project as
-              it was swing dance and ballet as i was given a task to make
-              contact page for this theme.
-            </p>
-          </a>
-          <a
-            href="https://github.com/pratikniraula/entrepreneur_theme"
-            class="project-card"
-          >
-            <img src="./public/icons/github.svg" alt="" />
-            <h1>Entrepreneur Theme</h1>
-            <p>
-              As this theme was designed for the student to uplift their skills
-              I participated on it and made About us page and some personas.
-            </p>
-          </a>
-        </div>
-      </div>
-      <div id="about" class="about-page-header">About me...</div>
+
+      <div id="about" class="about-page-header red">About Me</div>
       <div class="home-page-about">
         <div class="about-page-detail">
-          <div class="description-card">
-            <p>
+          <div class="description-card red-bg">
+            <p class="red">
               I am Prateek Niraula, Currently studing Multimedia and
               communnication at ZEALAND, KØGE.
             </p>
           </div>
-          <div class="description-card">
-            <p>I am a Nepalese citizen currently living in Denmark.</p>
+          <div class="description-card yellow-bg">
+            <p class="yellow">
+              I am a Nepalese citizen currently living in Denmark.
+            </p>
           </div>
-          <div class="description-card">
-            <p>
+          <div class="description-card green-bg">
+            <p class="green">
               I enjoy watching and playing football, beside that I am intrested
               in music.
             </p>
           </div>
-          <div class="description-card">
-            <p>I love to invest my time in designing and developing website.</p>
+          <div class="description-card yellow-bg">
+            <p class="yellow">
+              I love to invest my time in designing and developing website.
+            </p>
           </div>
         </div>
         <div class="about-page">
@@ -99,7 +79,7 @@
         </div>
       </div>
       <div class="gallery home-page-skills">
-        <div class="gallery-title">Skills...</div>
+        <div class="gallery-title green">Skills</div>
         <div class="gallery-container">
           <div class="gallery-img">
             <img src="./public/images/html.png" alt="html" />
@@ -115,7 +95,7 @@
           </div>
         </div>
       </div>
-      <div id="contact" class="home-page-footer-title">Contact Me...</div>
+      <div id="contact" class="home-page-footer-title yellow">Contact Me</div>
       <div class="home-page-contact">
         <a href="mailto:pratikniraula9847@gmail.com"
           ><img src="./public/icons/mail.svg" alt="mail icon"
@@ -136,9 +116,6 @@
           href="https://www.google.dk/maps/place/Skagensgade+2E,+2630+Taastrup/@55.650615,12.2651973,17z/data=!3m1!4b1!4m5!3m4!1s0x46525909790eb8ff:0x2bfe2b1f288144eb!8m2!3d55.650615!4d12.267386"
           ><img src="./public/icons/location.svg" alt="location icon"
         /></a>
-      </div>
-      <div class="home-page-footer">
-        <p></p>
       </div>
     </div>
   </body>

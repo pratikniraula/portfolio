@@ -1,0 +1,27 @@
+.project-page {
+  padding-top: 5rem;
+}
+.page-footer-title {
+  padding: 5rem 0 2rem 0;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.page-footer {
+  padding-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.page-footer a {
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s ease-in-out;
+}
+
+.page-footer a:hover {
+  transform: scale(1.1);
+}
